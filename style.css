@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  #user-list {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  #user-list th, #user-list td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  #user-list th {
+    background-color: #f7f7f7;
+  }
+  
+  button.edit-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  button.delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button.edit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  button.delete-btn:hover {
+    background-color: #e53935;
+  }
+  
+  table td {
+    padding: 10px;
+    vertical-align: middle;
+  }
+  
+  table {
+    width: 100%;
+    border-spacing: 0;
+    margin-top: 20px;
+  }
+  
+  
+  form input, form button {
+    border-radius: 8px;
+  }
+  
+  
+  table {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  
+  button.edit-btn {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 12px;
+  }
+  
+  button.delete-btn {
+    background-color: #f44336;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 12px;
+  }
+  
+  
+  button.edit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  button.delete-btn:hover {
+    background-color: #e53935;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+  
+    h1 {
+        font-size: 20px;
+    }
+  
+    form input, form button {
+        font-size: 14px;
+    }
+  
+    table td, table th {
+        font-size: 14px;
+    }
+  }
+  

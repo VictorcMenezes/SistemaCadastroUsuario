@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Usuários</h1>
+        <form>
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="number" id="age" placeholder="Idade" required>
+            <button type="button" id="add-user-btn">Adicionar Usuário</button>
+            <button type="button" id="cancel-edit-btn" style="display: none;">Cancelar Edição</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Idade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="user-list"></tbody>
+        </table>
+
+        <div id="message-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
