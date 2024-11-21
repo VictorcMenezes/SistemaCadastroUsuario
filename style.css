@@ -1,21 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Usa 100% da altura da viewport */
+  display: flex;
+  flex-direction: column; /* Layout em coluna */
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+}
   
   .container {
     background-color: #fff;
     padding: 30px;
+    align-items: center; /* Centraliza horizontalmente */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -138,6 +134,14 @@
     background-color: #e53935;
   }
   
+  /* Estilização básica do footer */
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
   
   @media (max-width: 600px) {
     .container {
